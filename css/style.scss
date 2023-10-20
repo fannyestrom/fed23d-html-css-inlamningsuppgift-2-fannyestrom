@@ -1,5 +1,7 @@
+@import 'vendor/normalize';
+
 @import 'mobile';
 
-body {
-  background-color: yellow;
+@media screen and (min-width: 1280px) {
+  @import 'desktop';
 }

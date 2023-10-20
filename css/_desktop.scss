@@ -1,0 +1,44 @@
+body {
+    background-color: yellow;
+}
+
+main {
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+}
+
+header {
+    flex-direction: column;
+}
+
+.page1 {
+    grid-column: span 11;
+    min-height: 100vh;
+    .top, .bottom {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(11, 1fr);
+    }
+}
+
+.top {
+    .page1-heading {
+        grid-column: span 4;
+    }
+    
+    .body-text {
+        grid-column: span 7;
+    }
+}
+
+.bottom {
+    .page1-photo {
+        grid-column: span 5;
+    }
+
+    .body-text2 {
+        grid-column: span 6;
+    }
+}
