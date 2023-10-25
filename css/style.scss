@@ -9,16 +9,34 @@
 
 }
 
-@import 'mobile';
-
-@media screen and (min-width: 1280px) {
-  @import 'desktop';
+body {
+  background-color: rgb(255, 241, 54);
 }
 
 header {
+  background-color: black;
+  color: white;
   h1 {
     font-family: 'Jockey One', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
   }
+}
+
+.page1 {
+  background-color: black;
+  color: white;
+  .body-text {
+    color: rgb(0, 255, 57)
+  }
+  .body-text2 {
+    background-color: white;
+    color: rgb(172, 118, 255)
+  }
+}
+
+@import 'mobile';
+
+@media screen and (min-width: 1280px) {
+  @import 'desktop';
 }
