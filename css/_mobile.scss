@@ -4,13 +4,13 @@ body {
 
   main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
   }
   
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     position: fixed;
     width: 100%;
     padding: 7px;
@@ -24,7 +24,7 @@ header {
       margin: 0;
     }
 }
-  
+
 .page1 {
     grid-column: span 4;
     background-color: black;
@@ -48,7 +48,6 @@ header {
 
 .tahini-chickpeas {
     .tahini {
-        grid: span 2;
         color: rgb(0, 255, 57);
         font-size: 6rem;
         text-transform: uppercase;
