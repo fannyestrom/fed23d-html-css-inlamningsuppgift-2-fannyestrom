@@ -4,9 +4,15 @@ body {
 
   main {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 16px;
-  }
+}
+
+/* 
+----------------------------------------------------
+----------------------- HEADER ---------------------
+----------------------------------------------------
+ */
   
 header {
     display: flex;
@@ -25,16 +31,16 @@ header {
     }
 }
 
+/* 
+----------------------------------------------------
+----------------------- PAGE 1 ---------------------
+----------------------------------------------------
+ */
+
 .page1 {
     grid-column: span 4;
     background-color: black;
-    color: white;
     font-family: 'Jockey One', sans-serif;
-    padding-top: 300px;
-
-    .top, .bottom {
-        grid-column: span 4;
-    }
 
     .body-text {
       color: rgb(0, 255, 57)
@@ -46,37 +52,51 @@ header {
     }
 }
 
-.tahini-chickpeas {
-    .tahini {
-        color: rgb(0, 255, 57);
-        font-size: 6rem;
-        text-transform: uppercase;
+.page1-heading_container {
+    text-transform: uppercase;
+    position: relative;
+    min-width: 300px;
+    min-height: 300px;
+
+    .page1-heading {
         position: absolute;
-        top: 7rem;
-        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 100px;
     }
-    
+
+    .drizzle, .chickpeas {
+        position: absolute;
+    }
+
     .drizzle {
         color: rgb(172, 118, 255);
-        font-size: 2.2rem;
-        text-transform: uppercase;
-        letter-spacing: 0.05rem;
-        position: absolute;
-        top: 6.1rem;
-        
-        
+        font-size: 2rem;
+        letter-spacing: 0.055rem;
+        top: 88px;
+        right: 2px;
+    }
+    
+    .tahini {
+        color: rgb(0, 255, 57);
+        font-size: 5.5rem;
     }
 
     .chickpeas {
         color: rgb(255, 241, 54);
-        font-size: 2.2rem;
-        position: absolute;
-        text-transform: uppercase;
-        letter-spacing: 0.05rem;
-        top: 11.7rem;
-       
+        font-size: 2rem;
+        letter-spacing: 0.055rem;
+        left: 12px;
+        bottom: -6px;
+        z-index: -1;
     }
 }
 
+/* 
+----------------------------------------------------
+----------------------- PAGE 2 ---------------------
+----------------------------------------------------
+ */
 
 
