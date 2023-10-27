@@ -128,12 +128,27 @@ li {
     font-family: 'Jockey One', sans-serif;
 
     .body-text {
-      color: rgb(0, 255, 57)
+      color: rgb(0, 255, 57);
+      padding-left: 20px;
+      padding-right: 20px;
     }
+
+    .page1-photo {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+      
+    }
+    
 
     .body-text2 {
       background-color: white;
       color: rgb(172, 118, 255);
+      padding: 13px;
+      border-left: solid 7px rgb(255, 241, 54);
+      border-right: solid 7px rgb(255, 241, 54);
     }
 }
 
