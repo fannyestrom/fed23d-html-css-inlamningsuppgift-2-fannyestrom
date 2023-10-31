@@ -212,7 +212,7 @@ input:checked + .burger-menu nav {
     margin: 7px;
 }
 
-li {
+.menu-list > li {
     font-size: 0;
     margin-top: 10px;
     background-color: white;
@@ -298,14 +298,46 @@ li {
 .page3 {
     grid-column: span 4;
     background-color: rgb(0, 255, 57);
+    border-top: 14px solid white;
+    padding-bottom: 30px;
 }
 
 h3 {
     font-family: 'Jockey One';
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 20px;
 }
 
-form > input {
-    
+form {
+    font-family: 'Jockey One';
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 7px 20px 7px 20px;
+}
+
+span > input {
+    border-radius: 11px;
+    border: none;
+}
+
+.cancel-button {
+    background-color: rgb(172, 118, 255);
+    text-transform: uppercase;
+    padding: 2px 20px 2px 20px;
+}
+
+.request-button {
+    background-color: rgb(255, 241, 54);
+    text-transform: uppercase;
+    padding: 2px 20px 2px 20px;
 }
