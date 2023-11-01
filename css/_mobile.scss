@@ -342,7 +342,7 @@ h3 {
     text-transform: uppercase;
     font-size: 2.5rem;
     text-align: center;
-    padding: 20px;
+    padding: 20px 20px 30px 20px;
 }
 
 
@@ -352,7 +352,7 @@ form {
     font-family: 'Jockey One';
     font-size: 1.5rem;
     text-transform: uppercase;
-    padding-bottom: 30px;
+    padding-bottom: 45px;
     display: flex;
     flex-direction: column;
 }
@@ -377,13 +377,17 @@ span > input {
 .cancel-button {
     background-color: rgb(170, 117, 255);
     text-transform: uppercase;
-    padding: 2px 20px 2px 20px;
+    padding: 2px 45px 2px 45px;
+    position: relative;
+    bottom: -20px;
 }
 
 .request-button {
     background-color: rgb(255, 242, 54);
     text-transform: uppercase;
-    padding: 2px 20px 2px 20px;
+    padding: 2px 45px 2px 45px;
+    position: relative;
+    bottom: -20px;
 }
 
 .contact-info {
