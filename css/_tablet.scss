@@ -29,6 +29,7 @@ main {
 
         .body-text {
             grid-column: span 8;
+            padding-bottom: 50px;
         }
     }
 
@@ -38,18 +39,242 @@ main {
         grid-column: span 8;
 
         .page1-photo {
-            grid-column: 1 / 4;
+            grid-column: 1 / 5;
+            overflow: hidden;
+            padding: 0;
+
+            .salad-arrow {
+                transform: rotate(90deg);
+                height: 2.6rem;
+                width: 2.6rem;
+                position: absolute;
+                bottom: 0;
+                left: 15px;
+              }
+
         }
 
         .body-text2 {
-            grid-column: 4 / 9;
+            grid-column: 5 / 9;
         }
 
         .explore-menu_container {
             display: grid;
             grid-template-columns: repeat(8, minmax(0, 1fr));
             gap: 16px;
-            grid-column: 4 / 9;
+            grid-column: 5 / 9;
+            display: flex;
+            justify-content: end;
+            padding: 0;
+            max-height: 2rem;
+
+            .explore-menu_button {
+                text-decoration: none;
+                font-size: 2rem;
+                position: relative;
+                bottom: 2rem;
+
+                .explore-arrow {
+                    position: relative;
+                    left: 0.27rem;
+                    bottom: 0.08rem;
+                    height: 50px;
+                    width: 40px;
+                }
+
+            }
+
+            .explore-menu_button:visited {
+                color: black;
+            }
         }
+    }
+}
+
+.explore-arrow {
+    transform: rotate(90deg);
+    position: relative;
+    right: 0.5em;
+}
+
+
+/* 
+----------------------------------------------------
+----------------------- PAGE 2 ---------------------
+----------------------------------------------------
+ */
+
+ #page2 {
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 16px;
+    margin: 7px;
+
+    .page2-images {
+        
+    }
+
+    .food-menu {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 16px;
+        grid-column: span 8;
+    }
+}
+
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-column: span 8;
+}
+
+.menu-list > li {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-column: span 8;
+
+    .menu-item {
+        grid-column: span 6;
+        font-size: 2rem;
+        font-family: 'Jockey One';
+        text-transform: uppercase;
+    }
+
+    .menu-price {
+        grid-column: 8;
+        font-size: 2rem;
+        font-family: 'Jockey One';
+        text-transform: uppercase;
+    }
+
+    .menu-descr {
+        display: none;
+    }
+
+    .menu-descr_mobile {
+        grid-column: span 6;
+        font-size: 1.1rem;
+    }
+
+    .new-item_background,
+    .vegan-item_background,
+    .popular-item_background {
+        font-size: 1rem;
+    }
+
+    .new-item_background {
+        position: relative;
+        left: 15px;
+    }
+
+    .vegan-item_background {
+        position: relative;
+        left: 8px;
+    }
+
+    .popular-item_background {
+        position: relative;
+        left: 15px;
+    }
+}
+
+
+/* 
+----------------------------------------------------
+----------------------- PAGE 3 ---------------------
+----------------------------------------------------
+ */
+
+ .page3 {
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 16px;
+}
+
+/*---form---*/
+
+form {
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 16px;
+    font-size: 1.4rem;
+
+    h3 {
+        grid-column: span 8;
+        font-size: 3rem;
+    }
+}
+
+.input_container {
+    grid-column: 3 / 7;
+    display: flex;
+    justify-content: space-between;
+}
+
+span > input {
+    border-radius: 17px;
+    border: none;
+}
+
+.date-input {
+    width: 12.9rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/*---contact info---*/
+
+.contact-info {
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 16px;
+    min-height: 450px;
+    min-width: 450px;
+
+    .contact-list_container {
+        font-size: 2rem;
+    }
+}
+
+
+/*---cookie bar---*/
+
+.cookie-bar {
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 16px;
+    font-size: 1.2rem;
+
+    span {
+        grid-column: 1 / 5;
+        position: relative;
+        top: 7px;
+    }
+
+    .cookie-buttons {
+        grid-column: 5 / 9;
+        display: flex;
+        justify-content: end;
+
+        .decline-button {
+            font-size: 1.5rem;
+            padding: 3px 53px 3px 53px;
+            border-radius: 13px;
+            position: relative;
+            bottom: 8px
+        }
+
+        .accept-button {
+            font-size: 1.5rem;
+            padding: 3px 53px 3px 53px;
+            border-radius: 13px;
+            bottom: 8px
+        }
+
     }
 }
