@@ -266,7 +266,7 @@ input:checked + .burger-menu nav {
 ----------------------------------------------------
  */
 
-.page2 {
+#page2 {
     grid-column: span 4;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -338,7 +338,7 @@ input:checked + .burger-menu nav {
     .vegan-item_background,
     .popular-item_background {
         font-family: 'Courier New', Courier, monospace;
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         text-transform: uppercase;
         font-weight: 400;
     }
@@ -363,7 +363,7 @@ input:checked + .burger-menu nav {
         transform: rotate(-5deg);
         padding: 0 7px 0 7px;
         position: relative;
-        left: 2px;
+        left: 4px;
         bottom: 7px;
         .vegan-item_text {
             display: block;
