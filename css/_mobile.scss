@@ -1,8 +1,8 @@
 body {
     background-color: rgb(255, 242, 54);
-  }
+}
 
-  main {
+main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
@@ -52,9 +52,9 @@ header {
 
 .burger-button span {
     display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
+    width: 30px;
+    height: 5px;
+    background-color: rgb(255, 242, 54);
     border-radius: 6px;
     margin-bottom: 4px;
 }
@@ -128,7 +128,7 @@ input:checked + .burger-menu nav {
  */
 
 .page1 {
-    grid-column: span 4;
+    grid-column: 1 / span 4;
     background-color: black;
     font-family: 'Jockey One', sans-serif;
 
@@ -416,7 +416,7 @@ span > input {
     font-family: 'Jockey One';
     font-size: 1.5rem;
     color: rgb(40, 188, 234);
-    text-shadow: 2px 2px black;
+    text-shadow: -2px -2px black;
 }
 
 .contact-list {
