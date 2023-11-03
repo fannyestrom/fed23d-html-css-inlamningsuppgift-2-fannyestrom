@@ -86,92 +86,92 @@ input:checked + .burger-menu nav {
 ----------------------------------------------------
  */
 
- .page1 {
+.page1 {
     grid-column: span 12;
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 16px;
     row-gap: 0;
     height: 100vh;
+}
 
-    .top {
-        display: grid;
-        grid-template-columns: repeat(12, minmax(0, 1fr));
-        grid-column: span 12;
-        gap: 16px;
+.top {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-column: span 12;
+    gap: 16px;
 
-        .page1-heading_container {
-            grid-column: 2 / 5;
-        }
-
-        .body-text {
-            grid-column: 6 / 13;
-            font-size: 1.8rem;
-            text-align: left;
-            border-right: 16px solid rgb(255, 242, 54);
-        }
+    .page1-heading_container {
+        grid-column: 2 / 5;
     }
 
-    .bottom {
-        display: grid;
-        grid-template-columns: repeat(12, minmax(0, 1fr));
-        grid-column: span 12;
-
-        .page1-photo {
-            grid-column: 2 / 7;
-            padding: 0;
-
-            .salad-arrow {
-                height: 2.6rem;
-                width: 2.6rem;
-                position: absolute;
-                bottom: 0;
-                left: 15px;
-            }
-        }
-
-        .body-text2 {
-            grid-column: 7 / 13;
-            font-size: 1.8rem;
-        }
-
-        .explore-menu_container {
-            display: grid;
-            grid-template-columns: repeat(12, minmax(0, 1fr));
-            gap: 16px;
-            grid-column: 7 / 13;
-            display: flex;
-            justify-content: end;
-            padding: 0;
-            max-height: 2rem;
-
-            .explore-menu_button {
-                text-decoration: none;
-                font-size: 2rem;
-                position: relative;
-                bottom: 2rem;
-
-                .explore-arrow {
-                    position: relative;
-                    left: 0.27rem;
-                    bottom: 0.08rem;
-                    height: 50px;
-                    width: 40px;
-                }
-
-            }
-
-            .explore-menu_button:visited {
-                color: black;
-            }
-        }
+    .body-text {
+        grid-column: 6 / 13;
+        font-size: 1.8rem;
+        text-align: left;
+        border-right: 16px solid rgb(255, 242, 54);
     }
 }
 
-.explore-arrow {
-    transform: rotate(90deg);
-    position: relative;
-    right: 0.5em;
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-column: span 12;
+
+    .lettuce-image {
+        grid-column: 2 / 7;
+        position: relative;
+        &:hover {
+            .lettuce-arrow {
+                bottom: 80px;
+            }
+        }
+
+        .lettuce-arrow {
+            height: 2.6rem;
+            width: 2.6rem;
+            position: absolute;
+            transition: bottom 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            bottom: 50px;
+            left: 25px;
+        }
+    }
+
+    .body-text2 {
+        grid-column: 7 / 13;
+        font-size: 1.8rem;
+    }
+
+    .explore-menu_container {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 16px;
+        grid-column: 7 / 13;
+        display: flex;
+        justify-content: end;
+        padding: 0;
+        max-height: 2rem;
+
+        .explore-menu_button {
+            text-decoration: none;
+            font-size: 2rem;
+            position: relative;
+            bottom: 5rem;
+
+            .explore-arrow {
+                position: relative;
+                left: 0.27rem;
+                bottom: 0.08rem;
+                height: 50px;
+                width: 40px;
+            }
+
+        }
+
+        .explore-menu_button:visited {
+            color: black;
+        }
+    }
 }
 
 
