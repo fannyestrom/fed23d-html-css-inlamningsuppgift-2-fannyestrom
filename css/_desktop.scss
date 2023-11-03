@@ -49,6 +49,26 @@ header {
     height: 6px;
 }
 
+.input-burger-menu:not(:checked):hover + .burger-menu {
+    span:nth-child(1) {
+        position: relative;
+        transition: left 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        left: 3px;
+    }
+
+    span:nth-child(2) {
+        position: relative;
+        transition: left 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        right: 3px;
+    }
+
+    span:nth-child(3) {
+        position: relative;
+        transition: left 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        left: 3px;
+    }
+}
+
 .input-burger-menu {
     top: 13px;
     left: 18px;
