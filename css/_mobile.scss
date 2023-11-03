@@ -6,7 +6,6 @@ main {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
-    width: 100vw;
 }
 
 html {
@@ -140,6 +139,7 @@ input:checked + .burger-menu nav {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         grid-column: span 4;
+        gap: 16px;
 
         .page1-heading_container {
             grid-column: span 4;
@@ -197,6 +197,8 @@ input:checked + .burger-menu nav {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         grid-column: span 4;
+        gap: 16px;
+        row-gap: 0;
 
         .page1-photo {
             grid-column: span 4;
@@ -204,6 +206,8 @@ input:checked + .burger-menu nav {
             display: flex;
             justify-content: center;
             position: relative;
+            
+            }
       
               .salad-arrow {
                   transform: rotate(90deg);
@@ -296,12 +300,16 @@ input:checked + .burger-menu nav {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-column: span 4;
+    gap: 16px;
+    row-gap: 0;
 }
 
 .menu-list > li {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-column: span 4;
+    gap: 16px;
+    row-gap: 0;
     font-size: 0;
     margin-top: 10px;
     background-color: white;

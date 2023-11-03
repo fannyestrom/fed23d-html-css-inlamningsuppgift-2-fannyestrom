@@ -2,7 +2,6 @@ main {
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
     gap: 16px;
-    width: 100vw;
 }
 
 
@@ -22,6 +21,8 @@ main {
         display: grid;
         grid-template-columns: repeat(8, minmax(0, 1fr));
         grid-column: span 8;
+        gap: 16px;
+        row-gap: 0;
 
         .page1-heading_container {
             grid-column: span 8;
@@ -37,6 +38,8 @@ main {
         display: grid;
         grid-template-columns: repeat(8, minmax(0, 1fr));
         grid-column: span 8;
+        gap: 16px;
+        row-gap: 0;
 
         .page1-photo {
             grid-column: 1 / 5;
@@ -50,7 +53,7 @@ main {
                 position: absolute;
                 bottom: 0;
                 left: 15px;
-              }
+            }
 
         }
 
@@ -127,25 +130,25 @@ main {
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
     grid-column: span 8;
+    gap: 16px;
+    row-gap: 0;
 }
 
 .menu-list > li {
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
     grid-column: span 8;
+    gap: 16px;
+    row-gap: 0;
 
     .menu-item {
         grid-column: span 6;
         font-size: 2rem;
-        font-family: 'Jockey One';
-        text-transform: uppercase;
     }
 
     .menu-price {
         grid-column: 8;
         font-size: 2rem;
-        font-family: 'Jockey One';
-        text-transform: uppercase;
     }
 
     .menu-descr {
