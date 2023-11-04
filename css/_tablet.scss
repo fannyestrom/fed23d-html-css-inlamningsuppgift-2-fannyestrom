@@ -7,7 +7,7 @@ main {
 
 /* 
 ----------------------------------------------------
------------------------ PAGE 1 ---------------------
+----------------------- page 1 ---------------------
 ----------------------------------------------------
  */
 
@@ -96,7 +96,7 @@ main {
 
 /* 
 ----------------------------------------------------
------------------------ PAGE 2 ---------------------
+----------------------- page 2 ---------------------
 ----------------------------------------------------
  */
 
@@ -106,10 +106,6 @@ main {
     grid-template-columns: repeat(8, minmax(0, 1fr));
     gap: 16px;
     margin: 7px;
-
-    .page2-images {
-        
-    }
 
     .food-menu {
         display: grid;
@@ -125,6 +121,19 @@ main {
     grid-column: span 8;
     gap: 16px;
     row-gap: 0;
+
+    .page2-image1_mobile {
+        grid-column: span 8;
+    }
+
+    .page2-image2_mobile {
+        grid-column: span 8;
+    }
+
+    .page2-image3_mobile {
+        grid-column: span 8;
+    }
+
 }
 
 .menu-list > li {
@@ -142,10 +151,6 @@ main {
     .menu-price {
         grid-column: 8;
         font-size: 2rem;
-    }
-
-    .menu-descr {
-        display: none;
     }
 
     .menu-descr_mobile {
@@ -178,7 +183,7 @@ main {
 
 /* 
 ----------------------------------------------------
------------------------ PAGE 3 ---------------------
+----------------------- page 3 ---------------------
 ----------------------------------------------------
  */
 
@@ -189,39 +194,52 @@ main {
     gap: 16px;
 }
 
-/*---form---*/
+/*---------------------- form --------------------*/
 
 form {
     grid-column: span 8;
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
     gap: 16px;
-    font-size: 1.4rem;
+    font-size: 2.2rem;
 
     h3 {
         grid-column: span 8;
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
 
 .input_container {
-    grid-column: 3 / 7;
+    grid-column: 2 / 8;
     display: flex;
     justify-content: space-between;
 }
 
 span > input {
-    border-radius: 17px;
+    border-radius: 21px;
     border: none;
 }
 
 .date-input {
-    width: 12.9rem;
+    width: 20.4rem;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
-/*---contact info---*/
+.cancel-button {
+    border-radius: 18px;
+    font-size: 2.2rem;
+    padding: 0 70px 0 70px;
+}
+
+.request-button {
+    border-radius: 18px;
+    font-size: 2.2rem;
+    padding: 0 70px 0 70px;
+}
+
+
+/*---------------------- contact info --------------------*/
 
 .contact-info {
     grid-column: span 8;
@@ -237,7 +255,7 @@ span > input {
 }
 
 
-/*---cookie bar---*/
+/*---------------------- cookie bar --------------------*/
 
 .cookie-bar {
     grid-column: span 8;
@@ -245,6 +263,13 @@ span > input {
     grid-template-columns: repeat(8, minmax(0, 1fr));
     gap: 16px;
     font-size: 1.2rem;
+
+    .cookie-text {
+        position: relative;
+        left: 15px;
+        top: 0;
+        font-size: 1.3rem;
+    }
 
     span {
         grid-column: 1 / 5;
@@ -258,17 +283,18 @@ span > input {
         justify-content: end;
 
         .decline-button {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             padding: 3px 53px 3px 53px;
-            border-radius: 13px;
+            border-radius: 14px;
             position: relative;
             bottom: 8px
         }
 
         .accept-button {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             padding: 3px 53px 3px 53px;
-            border-radius: 13px;
+            border-radius: 14px;
+            position: relative;
             bottom: 8px
         }
 
