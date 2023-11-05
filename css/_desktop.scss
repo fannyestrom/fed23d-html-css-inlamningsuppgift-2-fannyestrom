@@ -44,6 +44,11 @@ header {
         max-width: 60px;
         margin-top: 90px;
         text-align: center;
+
+        .h1-space {
+            display: inline;
+        }
+
     }
 
     nav {
@@ -156,18 +161,20 @@ input:checked + .burger-menu nav {
         .page1-heading {
 
             .drizzle {
-                font-size: 2.17rem;
+                font-size: 2.18rem;
             }
 
             .tahini {
                 font-size: 6rem;
+                position: relative;
+                bottom: 2px;
             }
 
             .chickpeas {
                 font-size: 2.17rem;
                 position: relative;
-                left: 13px;
-                bottom: 34px;
+                left: 15px;
+                bottom: 36px;
             }
 
         }
@@ -310,9 +317,9 @@ input:checked + .burger-menu nav {
     grid-template-columns: repeat(11, minmax(0, 1fr));
     grid-column: span 11;
     border-right: 7px solid rgb(255, 242, 54);
+    margin-bottom: -16px;
     position: relative;
-    bottom: 20px;
-    margin: 0;
+    bottom: 40px;
 }
 
 .page2-image1-mobile, 
