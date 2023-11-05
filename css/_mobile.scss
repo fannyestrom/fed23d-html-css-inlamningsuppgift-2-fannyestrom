@@ -31,6 +31,7 @@ header {
 
     h1 {
       font-family: 'Jockey One', sans-serif;
+      font-display: swap;
       text-transform: uppercase;
       letter-spacing: 1rem;
       margin: 0;
@@ -103,7 +104,7 @@ input:checked + .burger-menu nav {
     opacity: 1;
 }
 
-.purple-menu_container {
+.purple-menu-container {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -114,8 +115,9 @@ input:checked + .burger-menu nav {
     text-align: center;
 }
 
-.purple-menu_content {
+.purple-menu-content {
     font-family: 'Jockey One', sans-serif;
+    font-display: swap;
     font-size: 2.5rem;
     text-transform: uppercase;
 }
@@ -134,6 +136,7 @@ input:checked + .burger-menu nav {
     gap: 16px;
     background-color: black;
     font-family: 'Jockey One', sans-serif;
+    font-display: swap;
 }
 
 .top {
@@ -142,7 +145,7 @@ input:checked + .burger-menu nav {
     grid-column: span 4;
     gap: 16px;
 
-    .page1-heading_container {
+    .page1-heading-container {
         grid-column: span 4;
         text-transform: uppercase;
         position: relative;
@@ -229,7 +232,7 @@ input:checked + .burger-menu nav {
         border-right: solid 7px rgb(255, 242, 54);
     }
 
-    .explore-menu_container {
+    .explore-menu-container {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 16px;
@@ -239,7 +242,7 @@ input:checked + .burger-menu nav {
         border-right: solid 7px rgb(255, 242, 54);
         padding-bottom: 20px;
         
-        .explore-menu_button {
+        .explore-menu-button {
             grid-column: span 2 / 5;
             text-transform: uppercase;
             font-size: 1.5rem;
@@ -259,7 +262,7 @@ input:checked + .burger-menu nav {
             }
         }
 
-        .explore-menu_button:visited {
+        .explore-menu-button:visited {
             color: black;
         }
     }
@@ -297,25 +300,24 @@ input:checked + .burger-menu nav {
     grid-column: span 4;
     gap: 16px;
     row-gap: 0;
+}
 
-    .page2-image1_mobile {
-        grid-column: span 4;
-        width: 100%;
-        height: 100%;
-    }
+.page2-image1-mobile {
+    grid-column: span 4;
+    width: 100%;
+    height: 100%;
+}
 
-    .page2-image2_mobile {
-        grid-column: span 4;
-        width: 100%;
-        height: 100%;
-    }
+.page2-image2-mobile {
+    grid-column: span 4;
+    width: 100%;
+    height: 100%;
+}
 
-    .page2-image3_mobile {
-        grid-column: span 4;
-        width: 100%;
-        height: 100%;
-    }
-
+.page2-image3-mobile {
+    grid-column: span 4;
+    width: 100%;
+    height: 100%;
 }
 
 .menu-list > li {
@@ -337,7 +339,8 @@ input:checked + .burger-menu nav {
     .menu-item,
     .menu-price {
         font-size: 1.5rem;
-        font-family: 'Jockey One';
+        font-family: 'Jockey One', sans-serif;
+        font-display: swap;
         text-transform: uppercase;
     }
 
@@ -352,26 +355,28 @@ input:checked + .burger-menu nav {
         display: none;
     }
 
-    .menu-descr_mobile {
+    .menu-descr-mobile {
         grid-column: span 3;
         display: block;
         background-color: white;
-        font-family: 'Roboto Condensed';
+        font-family: 'Roboto Condensed', sans-serif;
+        font-display: swap;
         text-transform: initial;
         font-size: 0.8rem;
         padding-top: 5px;
     }
 
-    .new-item_background,
-    .vegan-item_background,
-    .popular-item_background {
+    .new-item-background,
+    .vegan-item-background,
+    .popular-item-background {
         font-family: 'Courier New', Courier, monospace;
+        font-display: swap;
         font-size: 0.7rem;
         text-transform: uppercase;
         font-weight: 400;
     }
 
-    .new-item_background {
+    .new-item-background {
         background-color: rgb(170, 117, 255);
         padding: 0 10px 0 8px;
         display: inline-block;
@@ -379,13 +384,13 @@ input:checked + .burger-menu nav {
         position: relative;
         left: 10px;
         bottom: 5px;
-        .new-item_text {
+        .new-item-text {
             display: block;
             transform: rotate(-2deg);
         }
     }
 
-    .vegan-item_background {
+    .vegan-item-background {
         background-color: rgb(0, 255, 56);
         display: inline-block;
         transform: rotate(-5deg);
@@ -393,20 +398,20 @@ input:checked + .burger-menu nav {
         position: relative;
         left: 4px;
         bottom: 7px;
-        .vegan-item_text {
+        .vegan-item-text {
             display: block;
             transform: rotate(5deg);
         }
     }
 
-    .popular-item_background {
+    .popular-item-background {
         background-color: rgb(255, 242, 54);
         display: inline-block;
         transform: rotate(-1deg);
         position: relative;
         left: 7px;
         bottom: 6px;
-        .popular-item_text {
+        .popular-item-text {
             display: block;
             transform: rotate(1deg);
         }
@@ -429,21 +434,23 @@ input:checked + .burger-menu nav {
     border-top: 14px solid white;
 }
 
-/*---form---*/
+/*---------------------- form --------------------*/
 
 form {
     grid-column: span 4;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
-    font-family: 'Jockey One';
+    font-family: 'Jockey One', sans-serif;
+    font-display: swap;
     font-size: 1.1rem;
     text-transform: uppercase;
     padding-bottom: 45px;
 
     h3 {
         grid-column: span 4;
-        font-family: 'Jockey One';
+        font-family: 'Jockey One', sans-serif;
+        font-display: swap;
         text-transform: uppercase;
         font-size: 2.5rem;
         text-align: center;
@@ -451,7 +458,7 @@ form {
     }
 }
 
-.input_container {
+.input-container {
     grid-column: 2 / 4;
     display: flex;
     justify-content: space-between;
@@ -515,12 +522,13 @@ span > input {
     filter: blur(2px);
 }
 
-.contact-info .contact-list_container {
+.contact-info .contact-list-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Jockey One';
+    font-family: 'Jockey One', sans-serif;
+    font-display: swap;
     font-size: 1.5rem;
     color: rgb(40, 188, 234);
     text-shadow: -2px -2px black;
@@ -531,13 +539,14 @@ span > input {
     display: flex;
     flex-direction: column;
 
-    .icon-text_container {
+    .icon-text-container {
         display: flex;
         align-items: center;
         padding: 10px;
         
         .contact-item {
             padding-left: 10px;
+            font-style: normal;
         }
     }
 
@@ -556,7 +565,8 @@ span > input {
     width: 100vw;
     background-color: rgb(170, 117, 255);
     padding: 20px;
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed', sans-serif;
+    font-display: swap;
     color: white;
 
     .cookie-text {
@@ -578,7 +588,8 @@ span > input {
             background-color: rgb(255, 242, 54);
             border: none;
             border-radius: 9px;
-            font-family: 'Jockey One';
+            font-family: 'Jockey One', sans-serif;
+            font-display: swap;
             text-transform: uppercase;
             font-size: 1.1rem;
             padding: 2px 35px 2px 35px;
@@ -590,7 +601,8 @@ span > input {
             background-color: rgb(0, 255, 56);
             border: none;
             border-radius: 9px;
-            font-family: 'Jockey One';
+            font-family: 'Jockey One', sans-serif;
+            font-display: swap;
             text-transform: uppercase;
             font-size: 1.1rem;
             padding: 2px 35px 2px 35px;

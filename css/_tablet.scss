@@ -25,7 +25,7 @@ main {
     gap: 16px;
     row-gap: 0;
 
-    .page1-heading_container {
+    .page1-heading-container {
         grid-column: span 8;
     }
 
@@ -61,7 +61,7 @@ main {
         grid-column: 5 / 9;
     }
 
-    .explore-menu_container {
+    .explore-menu-container {
         display: grid;
         grid-template-columns: repeat(8, minmax(0, 1fr));
         gap: 16px;
@@ -71,7 +71,7 @@ main {
         padding: 0;
         max-height: 2rem;
 
-        .explore-menu_button {
+        .explore-menu-button {
             text-decoration: none;
             font-size: 2rem;
             position: relative;
@@ -87,7 +87,7 @@ main {
 
         }
 
-        .explore-menu_button:visited {
+        .explore-menu-button:visited {
             color: black;
         }
     }
@@ -121,19 +121,18 @@ main {
     grid-column: span 8;
     gap: 16px;
     row-gap: 0;
+}
 
-    .page2-image1_mobile {
-        grid-column: span 8;
-    }
+.page2-image1-mobile {
+    grid-column: span 8;
+}
 
-    .page2-image2_mobile {
-        grid-column: span 8;
-    }
+.page2-image2-mobile {
+    grid-column: span 8;
+}
 
-    .page2-image3_mobile {
-        grid-column: span 8;
-    }
-
+.page2-image3-mobile {
+    grid-column: span 8;
 }
 
 .menu-list > li {
@@ -153,28 +152,28 @@ main {
         font-size: 2rem;
     }
 
-    .menu-descr_mobile {
+    .menu-descr-mobile {
         grid-column: span 6;
         font-size: 1.1rem;
     }
 
-    .new-item_background,
-    .vegan-item_background,
-    .popular-item_background {
+    .new-item-background,
+    .vegan-item-background,
+    .popular-item-background {
         font-size: 1rem;
     }
 
-    .new-item_background {
+    .new-item-background {
         position: relative;
         left: 15px;
     }
 
-    .vegan-item_background {
+    .vegan-item-background {
         position: relative;
         left: 8px;
     }
 
-    .popular-item_background {
+    .popular-item-background {
         position: relative;
         left: 15px;
     }
@@ -209,7 +208,7 @@ form {
     }
 }
 
-.input_container {
+.input-container {
     grid-column: 2 / 8;
     display: flex;
     justify-content: space-between;
@@ -249,7 +248,7 @@ span > input {
     min-height: 450px;
     min-width: 450px;
 
-    .contact-list_container {
+    .contact-list-container {
         font-size: 2rem;
     }
 }

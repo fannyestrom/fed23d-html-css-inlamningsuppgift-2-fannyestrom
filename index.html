@@ -16,6 +16,9 @@
 <body>
 
 <main>
+
+<!---------------------- header -------------------->
+
   <header>
     <input class="input-burger-menu" type="checkbox" aria-label="main menu">
 
@@ -27,10 +30,10 @@
       </button>
   
       <nav>
-        <ul class="purple-menu_container">
-          <li class="purple-menu_content">Home</li>
-          <li class="purple-menu_content">Menu</li>
-          <li class="purple-menu_content">Book table</li>
+        <ul class="purple-menu-container">
+          <li class="purple-menu-content">Home</li>
+          <li class="purple-menu-content">Menu</li>
+          <li class="purple-menu-content">Book table</li>
         </ul>
       </nav>
     </div>
@@ -38,10 +41,12 @@
     <h1>Tough <span>&nbsp;</span> Cookie</h1>
   </header>
 
-  <!------ page1 ------>
+
+<!---------------------- page 1 -------------------->
+
   <div class="page1">
     <section class="top">
-      <div class="page1-heading_container">
+      <div class="page1-heading-container">
         <div class="page1-heading">
           <span class="drizzle">drizzle</span>
           <span class="tahini">tahini</span>
@@ -57,7 +62,11 @@
     <section class="bottom">
       <div class="lettuce-image">
         <div class="lettuce-arrow">
-          <img src="../fed23d-html-css-inlamningsuppgift-2-fannyestrom/assets/icons/arrow.svg" width="63" height="50">
+          <img 
+          src="../fed23d-html-css-inlamningsuppgift-2-fannyestrom/assets/icons/arrow.svg" 
+          width="63" 
+          height="50"
+          alt="arrow">
         </div>
       </div>
 
@@ -65,8 +74,8 @@
         Crispy iceberg lettuce Caribbean red habanero blueberry chia seed jam overflowing berries roasted butternut squash basmati thyme hummus falafel bowl cozy butternut cilantro lime vinaigrette heat mint potato chocolate cookie seeds samosa walnut mushroom tart.
       </p>
 
-      <div class="explore-menu_container">
-        <a href="#page2" class="explore-menu_button">
+      <div class="explore-menu-container">
+        <a href="#page2" class="explore-menu-button">
           Explore menu
           <svg class="explore-arrow" width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line y1="15.1569" x2="24" y2="15.1569" stroke="black" stroke-width="5"/>
@@ -78,7 +87,9 @@
     </section>
    </div>
 
-  <!------ page2 ------>
+
+<!---------------------- page 2 -------------------->
+
   <div id="page2">
     <section class="page2-images">
       <img 
@@ -105,125 +116,135 @@
     </section>
 
     <section class="food-menu">
-     <ul class="menu-list">
-      <li>
-        <span class="menu-item">
-          Halloumi moklieh
-          <div class="new-item_background">
-            <span class="new-item_text">New!</span>
-          </div>
-        </span>
-        <span class="menu-descr">Deep-fried halloumi</span>
-        <span class="menu-price">195 kr</span>
-        <span class="menu-descr_mobile">Deep-fried halloumi</span>
-      </li>
-      <li>
-        <span class="menu-item">Mojaddara</span>
-        <span class="menu-descr">Green lentis with rice and fried onion</span>
-        <span class="menu-price">135 kr</span>
-        <span class="menu-descr_mobile">Green lentis with rice and fried onion</span>
-      </li>
+      <ul class="menu-list">
+        <li>
+          <span class="menu-item">
+            Halloumi moklieh
+            <span class="new-item-background">
+              <span class="new-item-text">New!</span>
+            </span>
+          </span>
+          <span class="menu-descr">Deep-fried halloumi</span>
+          <span class="menu-price">195 kr</span>
+          <span class="menu-descr-mobile">Deep-fried halloumi</span>
+        </li>
+        <li>
+          <span class="menu-item">Mojaddara</span>
+          <span class="menu-descr">Green lentis with rice and fried onion</span>
+          <span class="menu-price">135 kr</span>
+          <span class="menu-descr-mobile">Green lentis with rice and fried onion</span>
+        </li>
+      </ul>
+
       <img 
-        class="page2-image1_mobile"
-        src="assets/photos/edgar-castrejon-1SPu0KT-Ejg-unsplash.jpg" 
-        alt=""
-        width="200"
-        height="300"
-        loading="lazy">
-      <li>
-        <span class="menu-item">Chiar & laban</span>
-        <span class="menu-descr">Lebanese spicy yoghurt with chopped cucumber</span>
-        <span class="menu-price">95 kr</span>
-        <span class="menu-descr_mobile">Lebanese spicy yoghurt with chopped cucumber</span>
-      </li>
-      <li>
-        <span class="menu-item">Warak inab</span>
-        <span class="menu-descr">Rice- and veggie-filled dolma with mint and lemon</span>
-        <span class="menu-price">85 kr</span>
-        <span class="menu-descr_mobile">Rice- and veggie-filled dolma with mint and lemon</span>
-      </li>
+      class="page2-image1-mobile"
+      src="assets/photos/edgar-castrejon-1SPu0KT-Ejg-unsplash.jpg" 
+      alt=""
+      width="200"
+      height="300"
+      loading="lazy">
+
+      <ul class="menu-list">
+        <li>
+          <span class="menu-item">Chiar & laban</span>
+          <span class="menu-descr">Lebanese spicy yoghurt with chopped cucumber</span>
+          <span class="menu-price">95 kr</span>
+          <span class="menu-descr-mobile">Lebanese spicy yoghurt with chopped cucumber</span>
+        </li>
+        <li>
+          <span class="menu-item">Warak inab</span>
+          <span class="menu-descr">Rice- and veggie-filled dolma with mint and lemon</span>
+          <span class="menu-price">85 kr</span>
+          <span class="menu-descr-mobile">Rice- and veggie-filled dolma with mint and lemon</span>
+        </li>
+      </ul>
+
       <img 
-        class="page2-image2_mobile"
+        class="page2-image2-mobile"
         src="assets/photos/kao-rodriguez-IeTzHiuepmU-unsplash.jpg" 
         alt=""
         width="300"
         height="300"
         loading="lazy">
-      <li>
-        <span class="menu-item">
-          Moutabbal batinzian
-          <div class="vegan-item_background">
-            <span class="vegan-item_text">Vegan</span>
-          </div>
-        </span>
-        <span class="menu-descr">Smoked chopped aubergine, sesame paste, garlic and lemon</span>
-        <span class="menu-price">175 kr</span>
-        <span class="menu-descr_mobile">Smoked chopped aubergine, sesame paste, garlic and lemon</span>
-      </li>
-      <li>
-        <span class="menu-item">
-          Ardishoki
-          <div class="popular-item_background">
-            <span class="popular-item_text">Popular</span>
-          </div>
-        </span>
-        <span class="menu-descr">Artichoke with lemon and garlic marinade</span>
-        <span class="menu-price">99 kr</span>
-        <span class="menu-descr_mobile">Artichoke with lemon and garlic marinade</span>
-      </li>
-      <li>
-        <span class="menu-item">Mhamara</span>
-        <span class="menu-descr">Spicy bell pepper relish with crushed walnuts and pomegranate syrup</span>
-        <span class="menu-price">123 kr</span>
-        <span class="menu-descr_mobile">Spicy bell pepper relish with crushed walnuts and pomegranate syrup</span>
-      </li>
+
+      <ul class="menu-list">
+        <li>
+          <span class="menu-item">
+            Moutabbal batinzian
+            <span class="vegan-item-background">
+              <span class="vegan-item-text">Vegan</span>
+            </span>
+          </span>
+          <span class="menu-descr">Smoked chopped aubergine, sesame paste, garlic and lemon</span>
+          <span class="menu-price">175 kr</span>
+          <span class="menu-descr-mobile">Smoked chopped aubergine, sesame paste, garlic and lemon</span>
+        </li>
+        <li>
+          <span class="menu-item">
+            Ardishoki
+            <span class="popular-item-background">
+              <span class="popular-item-text">Popular</span>
+            </span>
+          </span>
+          <span class="menu-descr">Artichoke with lemon and garlic marinade</span>
+          <span class="menu-price">99 kr</span>
+          <span class="menu-descr-mobile">Artichoke with lemon and garlic marinade</span>
+        </li>
+        <li>
+          <span class="menu-item">Mhamara</span>
+          <span class="menu-descr">Spicy bell pepper relish with crushed walnuts and pomegranate syrup</span>
+          <span class="menu-price">123 kr</span>
+          <span class="menu-descr-mobile">Spicy bell pepper relish with crushed walnuts and pomegranate syrup</span>
+        </li>
+      </ul>
+
       <img 
-        class="page2-image3_mobile"
+        class="page2-image3-mobile"
         src="assets/photos/mor-shani-kQloRmVQYIs-unsplash.jpg" 
         alt=""
         width="300"
         height="300"
         loading="lazy">
-     </ul>
     </section>
   </div>
 
-  <!------ page3 ------>
+
+<!---------------------- page 3 -------------------->
   <div class="page3">
     <form class="form">
       <h3>Book your table</h3>
       
-      <span class="input_container">
+      <span class="input-container">
         <label for="name">Name</label>
-        <input type="text" name="name" placeholder="">
+        <input type="text" name="name" placeholder="" id="name">
       </span>
 
-      <span class="input_container">
+      <span class="input-container">
         <label for="email">Email</label>
-        <input type="email" name="email" placeholder="">
+        <input type="email" name="email" placeholder="" id="email">
       </span>
 
-      <span class="input_container">
-        <label for="Phone">Phone</label>
-        <input type="tel" name="phone" placeholder="">
+      <span class="input-container">
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" placeholder="" id="phone">
       </span>
 
-      <span class="input_container">
+      <span class="input-container">
         <label for="date">Date</label>
-        <input class="date-input" type="date" name="date">
+        <input class="date-input" type="date" name="date" id="date">
       </span>
 
-      <span class="input_container">
-        <label for="party size">Party size</label>
-        <input type="text" name="party-size" placeholder="">
+      <span class="input-container">
+        <label for="party-size">Party size</label>
+        <input type="text" name="party-size" placeholder="" id="party-size">
       </span>
 
-      <span class="input_container">
+      <span class="input-container">
         <label for="allergies">Allergies</label>
-        <input type="text" name="allergies" placeholder="">
+        <input type="text" name="allergies" placeholder="" id="allergies">
       </span>
 
-      <span class="input_container">
+      <span class="input-container">
         <input class="cancel-button" type="reset" name="cancel" value="Cancel">
         <input class="request-button" type="submit" name="request" value="Request">
       </span>
@@ -232,43 +253,46 @@
 
     <div class="contact-info">
       <div class="contact-bg"></div>
-      <div class="contact-list_container">
+      <div class="contact-list-container">
         
-        <ul class="contact-list">
-          <span class="icon-text_container">
+        <div class="contact-list">
+          <div class="icon-text-container">
             <span class="material-symbols-outlined" style="font-size: 4rem;">
               call
             </span>
-            <li class="contact-item">
+            <address class="contact-item">
               +46 8 123 45 67
-            </li>
-          </span>
+            </address>
+          </div>
 
-          <span class="icon-text_container">
+          <div class="icon-text-container">
             <span class="material-symbols-outlined" style="font-size: 4rem;">
               alternate_email
             </span>
-            <li class="contact-item">
+            <address class="contact-item">
               book@toughcookie.com
-            </li>
-          </span>
+            </address>
+          </div>
 
-          <span class="icon-text_container">
+          <div class="icon-text-container">
             <span class="material-symbols-outlined" style="font-size: 4rem;">
               location_on
             </span>
-            <li class="contact-item">
+            <address class="contact-item">
               Brända Tomten<br> 
               111 31 Stockholm
-            </li>
-          </span>
-        </ul>
+            </address>
+          </div>
+        </div>
 
       </div>
     </div>
   </div>
 
 </main>
+
+
+<!---------------------- cookie bar -------------------->
 
 <div class="cookie-bar">
   <span class="cookie-text">You should accept cookies.</span>

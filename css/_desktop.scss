@@ -120,8 +120,7 @@ input:checked + .burger-menu nav {
     opacity: 1;
 }
 
-.purple-menu_content {
-    font-family: 'Jockey One', sans-serif;
+.purple-menu-content {
     font-size: 3rem;
     text-transform: uppercase;
 }
@@ -148,7 +147,7 @@ input:checked + .burger-menu nav {
     grid-column: span 11;
     gap: 16px;
 
-    .page1-heading_container {
+    .page1-heading-container {
         grid-column: 2 / 5;
         position: relative;
         right: 20px;
@@ -222,7 +221,7 @@ input:checked + .burger-menu nav {
 
     }
 
-    .explore-menu_container {
+    .explore-menu-container {
         display: grid;
         grid-template-columns: repeat(11, minmax(0, 1fr));
         gap: 16px;
@@ -235,7 +234,7 @@ input:checked + .burger-menu nav {
         padding: 0;
         height: 0;
 
-        .explore-menu_button {
+        .explore-menu-button {
             text-decoration: none;
             font-size: 2rem;
             position: relative;
@@ -253,7 +252,7 @@ input:checked + .burger-menu nav {
 
         }
 
-        .explore-menu_button:visited {
+        .explore-menu-button:visited {
             color: black;
         }
     }
@@ -313,14 +312,14 @@ input:checked + .burger-menu nav {
     border-right: 7px solid rgb(255, 242, 54);
     position: relative;
     bottom: 20px;
+    margin: 0;
+}
 
-    .page2-image1_mobile, 
-    .page2-image2_mobile, 
-    .page2-image3_mobile {
+.page2-image1-mobile, 
+    .page2-image2-mobile, 
+    .page2-image3-mobile {
         display: none;
     }
-
-}
 
 .menu-list > li {
     display: grid;
@@ -353,30 +352,30 @@ input:checked + .burger-menu nav {
         align-items: center;
     }
 
-    .menu-descr_mobile {
+    .menu-descr-mobile {
         display: none;
     }
 
-    .new-item_background,
-    .vegan-item_background,
-    .popular-item_background {
+    .new-item-background,
+    .vegan-item-background,
+    .popular-item-background {
         font-size: 0.7rem;
     }
 
-    .new-item_background {
+    .new-item-background {
         position: relative;
         left: 12px;
         bottom: 6px;
         padding: 0 20px 0 20px;
     }
 
-    .vegan-item_background {
+    .vegan-item-background {
         position: relative;
         left: 4px;
         bottom: 8px;
     }
 
-    .popular-item_background {
+    .popular-item-background {
         position: relative;
         left: 13px;
         bottom: 7px;
@@ -420,7 +419,7 @@ form {
     }
 }
 
-.input_container {
+.input-container {
     grid-column: 1 / 6;
     display: flex;
     justify-content: space-between;
@@ -465,7 +464,7 @@ span > input {
     width: 550px;
     height: 350px;
 
-    .contact-list_container {
+    .contact-list-container {
         font-size: 1.8rem;
     }
 }
